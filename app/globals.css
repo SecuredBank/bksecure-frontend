@@ -10,8 +10,11 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground antialiased;
-    background-image: 
+    background-color: #0A192F;
+    color: #CCD6F6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image:
       radial-gradient(circle at 50% 0%, rgba(100, 255, 218, 0.1) 0%, transparent 50%),
       linear-gradient(to bottom, #0A192F, #020c1b);
     min-height: 100vh;
@@ -22,7 +25,7 @@
   .glass-panel {
     @apply bg-secondary/50 backdrop-blur-md border border-accent/10 shadow-xl;
   }
-  
+
   .text-glow {
     text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
   }

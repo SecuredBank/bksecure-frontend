@@ -2,9 +2,16 @@
 
 import { useState, useEffect } from "react";
 
+interface DeviceInfo {
+  userAgent: string;
+  screenRes: string;
+  timezone: string;
+  platform: string;
+}
+
 export function useDeviceFingerprint() {
   const [fingerprint, setFingerprint] = useState<string | null>(null);
-  const [deviceInfo, setDeviceInfo] = useState<any>(null);
+  const [deviceInfo, setDeviceInfo] = useState<DeviceInfo | null>(null);
 
   useEffect(() => {
     // Simulate fingerprint generation

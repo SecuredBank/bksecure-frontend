@@ -47,6 +47,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         const Comp = asChild ? Slot : "button";
 
         // Wrap with motion for subtle tap effect
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const MotionComp = motion(Comp as any);
 
         return (

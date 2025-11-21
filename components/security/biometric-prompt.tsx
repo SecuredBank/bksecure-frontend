@@ -15,19 +15,26 @@ export function BiometricPrompt({ isOpen, onSuccess, onCancel }: BiometricPrompt
     const [status, setStatus] = useState<"scanning" | "success" | "failed">("scanning");
 
     useEffect(() => {
+        let timer1: NodeJS.Timeout;
+        let timer2: NodeJS.Timeout;
+
         if (isOpen) {
             setStatus("scanning");
             // Simulate scanning process
-            const timer1 = setTimeout(() => {
+            timer1 = setTimeout(() => {
                 setStatus("success");
-                const timer2 = setTimeout(() => {
+                timer2 = setTimeout(() => {
                     onSuccess();
                 }, 1000);
-                return () => clearTimeout(timer2);
             }, 2000);
-            return () => clearTimeout(timer1);
         }
-    }, [isOpen, onSuccess]);
+
+        return () => {
+            clearTimeout(timer1);
+            clearTimeout(timer2);
+        };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [isOpen]);
 
     return (
         <AnimatePresence>

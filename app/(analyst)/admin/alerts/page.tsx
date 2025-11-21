@@ -9,7 +9,8 @@ import { MapPin, Smartphone, Clock, AlertTriangle, CheckCircle, XCircle, User } 
 
 export default function CaseInvestigationPage() {
     return (
-        <div className="min-h-screen bg-background">
+        <div className="min-h-screen bg-background cyber-grid relative">
+            <div className="absolute inset-0 bg-primary/10 pointer-events-none" />
             <Navbar />
 
             <main className="container px-4 py-8 md:px-8">
@@ -35,7 +36,7 @@ export default function CaseInvestigationPage() {
 
                 <div className="grid gap-6 md:grid-cols-3">
                     {/* Transaction Details */}
-                    <Card className="col-span-2 border-accent/10 bg-secondary/30">
+                    <Card className="col-span-2 glass-panel">
                         <CardHeader>
                             <CardTitle>Transaction Analysis</CardTitle>
                             <CardDescription>Deep dive into the specific transaction details.</CardDescription>
@@ -77,7 +78,7 @@ export default function CaseInvestigationPage() {
 
                     {/* User Profile & Device Info */}
                     <div className="space-y-6">
-                        <Card className="border-accent/10 bg-secondary/30">
+                        <Card className="glass-panel">
                             <CardHeader>
                                 <CardTitle>User Profile</CardTitle>
                             </CardHeader>
@@ -104,7 +105,7 @@ export default function CaseInvestigationPage() {
                             </CardContent>
                         </Card>
 
-                        <Card className="border-accent/10 bg-secondary/30">
+                        <Card className="glass-panel">
                             <CardHeader>
                                 <CardTitle>Device Fingerprint</CardTitle>
                             </CardHeader>

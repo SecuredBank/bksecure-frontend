@@ -7,7 +7,8 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen bg-background cyber-grid relative flex flex-col overflow-hidden">
+      <div className="absolute inset-0 bg-primary/10 pointer-events-none" />
       <header className="container mx-auto px-6 py-6 flex items-center justify-between">
         <div className="flex items-center gap-2 font-bold text-xl">
           <ShieldCheck className="h-8 w-8 text-accent" />
@@ -96,7 +97,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 + (i * 0.1) }}
-              className="p-6 rounded-2xl border border-accent/10 bg-secondary/20 backdrop-blur-sm hover:border-accent/30 transition-colors"
+              className="p-6 rounded-2xl glass-panel glass-panel-hover transition-colors"
             >
               <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 mx-auto">
                 <feature.icon className="h-6 w-6 text-accent" />

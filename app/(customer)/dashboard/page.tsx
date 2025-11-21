@@ -11,7 +11,8 @@ import Link from "next/link";
 
 export default function DashboardPage() {
     return (
-        <div className="min-h-screen bg-background">
+        <div className="min-h-screen bg-background cyber-grid relative overflow-hidden">
+            <div className="absolute inset-0 bg-primary/10 pointer-events-none" />
             <Navbar />
 
             <main className="container px-4 py-8 md:px-8">
@@ -53,7 +54,7 @@ export default function DashboardPage() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1 }}
                         >
-                            <Card className="relative overflow-hidden border-accent/10 bg-secondary/30 hover:border-accent/30 transition-colors">
+                            <Card className="glass-panel glass-panel-hover relative overflow-hidden transition-colors">
                                 <div className="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-accent/5 blur-3xl" />
                                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                                     <CardTitle className="text-sm font-medium text-muted-foreground">
@@ -76,7 +77,7 @@ export default function DashboardPage() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
                     >
-                        <Card className="border-accent/10 bg-secondary/30 h-full flex flex-col justify-center items-center text-center p-6 hover:bg-secondary/40 cursor-pointer transition-colors group">
+                        <Card className="glass-panel glass-panel-hover h-full flex flex-col justify-center items-center text-center p-6 cursor-pointer transition-colors group">
                             <div className="rounded-full bg-accent/10 p-4 mb-4 group-hover:scale-110 transition-transform">
                                 <ArrowUpRight className="h-6 w-6 text-accent" />
                             </div>
@@ -87,7 +88,7 @@ export default function DashboardPage() {
                 </div>
 
                 <div className="grid gap-6 md:grid-cols-1">
-                    <Card className="border-accent/10 bg-secondary/20">
+                    <Card className="glass-panel">
                         <CardHeader>
                             <CardTitle>Recent Transactions</CardTitle>
                         </CardHeader>

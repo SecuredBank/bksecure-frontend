@@ -8,7 +8,8 @@ import { ShieldAlert, Activity, Users, Lock } from "lucide-react";
 
 export default function AnalystDashboard() {
     return (
-        <div className="min-h-screen bg-background">
+        <div className="min-h-screen bg-background cyber-grid relative overflow-hidden">
+            <div className="absolute inset-0 bg-primary/10 pointer-events-none" />
             <Navbar />
 
             <main className="container px-4 py-8 md:px-8">

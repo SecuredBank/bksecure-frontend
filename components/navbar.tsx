@@ -12,7 +12,7 @@ export function Navbar() {
     const isAnalyst = pathname.startsWith("/admin");
 
     return (
-        <nav className="sticky top-0 z-50 w-full border-b border-accent/10 bg-background/80 backdrop-blur-md">
+        <nav className="sticky top-0 z-50 w-full border-b border-accent/10 bg-background/60 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60">
             <div className="container flex h-16 items-center justify-between px-4 md:px-8">
                 <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tighter">
                     <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-primary/20 ring-1 ring-accent/50">

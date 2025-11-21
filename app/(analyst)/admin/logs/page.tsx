@@ -9,7 +9,8 @@ import { Search, Filter, Download } from "lucide-react";
 
 export default function LogsPage() {
     return (
-        <div className="min-h-screen bg-background">
+        <div className="min-h-screen bg-background cyber-grid relative">
+            <div className="absolute inset-0 bg-primary/10 pointer-events-none" />
             <Navbar />
 
             <main className="container px-4 py-8 md:px-8">
@@ -24,7 +25,7 @@ export default function LogsPage() {
                     </Button>
                 </div>
 
-                <Card className="border-accent/10 bg-secondary/30 mb-8">
+                <Card className="glass-panel mb-8">
                     <CardContent className="pt-6">
                         <div className="flex flex-col md:flex-row gap-4">
                             <div className="relative flex-1">
@@ -47,7 +48,7 @@ export default function LogsPage() {
                     </CardContent>
                 </Card>
 
-                <Card className="border-accent/10 bg-secondary/30">
+                <Card className="glass-panel">
                     <CardHeader>
                         <CardTitle>Live Feed</CardTitle>
                     </CardHeader>

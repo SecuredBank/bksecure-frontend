@@ -10,7 +10,7 @@ export async function POST(request: Request) {
   // Mock Fraud Logic
   let riskScore = 10;
   let status = "allowed";
-  let reasons = [];
+  const reasons: string[] = [];
 
   if (amount > 5000) {
     riskScore = 95;

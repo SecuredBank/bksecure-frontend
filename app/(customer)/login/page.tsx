@@ -32,10 +32,10 @@ export default function LoginPage() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-[url('/grid.svg')] relative overflow-hidden">
+        <div className="min-h-screen flex items-center justify-center bg-background cyber-grid relative overflow-hidden">
             {/* Background Effects */}
-            <div className="absolute inset-0 bg-background/90" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-3xl" />
+            <div className="absolute inset-0 bg-primary/10 pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-3xl pointer-events-none" />
 
             <BiometricPrompt
                 isOpen={showBiometric}
@@ -57,7 +57,7 @@ export default function LoginPage() {
                     <p className="text-muted-foreground">Next-Generation Secure Banking</p>
                 </div>
 
-                <Card className="border-accent/20 bg-secondary/40 backdrop-blur-xl shadow-2xl">
+                <Card className="glass-panel border-accent/20 shadow-2xl">
                     <CardHeader>
                         <CardTitle>Welcome Back</CardTitle>
                         <CardDescription>Enter your credentials to access your account securely.</CardDescription>

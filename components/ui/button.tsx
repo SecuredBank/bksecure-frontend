@@ -42,20 +42,20 @@ export interface ButtonProps
     asChild?: boolean;
 }
 
+const MotionSlot = motion(Slot);
+const MotionButton = motion.button;
+
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     ({ className, variant, size, asChild = false, ...props }, ref) => {
-        const Comp = asChild ? Slot : "button";
-
-        // Wrap with motion for subtle tap effect
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const MotionComp = motion(Comp as any);
+        const Comp = asChild ? MotionSlot : MotionButton;
 
         return (
-            <MotionComp
+            <Comp
                 className={cn(buttonVariants({ variant, size, className }))}
                 ref={ref}
                 whileTap={{ scale: 0.98 }}
-                {...props}
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                {...props as any}
             />
         );
     }

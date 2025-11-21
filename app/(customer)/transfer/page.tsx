@@ -47,10 +47,11 @@ export default function TransferPage() {
 
     if (status === "success") {
         return (
-            <div className="min-h-screen bg-background">
+            <div className="min-h-screen bg-background cyber-grid relative">
+                <div className="absolute inset-0 bg-primary/10 pointer-events-none" />
                 <Navbar />
-                <div className="container flex items-center justify-center min-h-[80vh]">
-                    <Card className="w-full max-w-md border-green-500/20 bg-secondary/30 text-center p-8">
+                <div className="container flex items-center justify-center min-h-[80vh] relative z-10">
+                    <Card className="w-full max-w-md glass-panel border-green-500/20 text-center p-8">
                         <motion.div
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
@@ -75,8 +76,8 @@ export default function TransferPage() {
         return (
             <div className="min-h-screen bg-background">
                 <Navbar />
-                <div className="container flex items-center justify-center min-h-[80vh]">
-                    <Card className="w-full max-w-md border-red-500/20 bg-secondary/30 text-center p-8">
+                <div className="container flex items-center justify-center min-h-[80vh] relative z-10">
+                    <Card className="w-full max-w-md glass-panel border-red-500/20 text-center p-8">
                         <motion.div
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
@@ -99,7 +100,8 @@ export default function TransferPage() {
     }
 
     return (
-        <div className="min-h-screen bg-background">
+        <div className="min-h-screen bg-background cyber-grid relative">
+            <div className="absolute inset-0 bg-primary/10 pointer-events-none" />
             <Navbar />
 
             {showChallenge && (
@@ -109,8 +111,8 @@ export default function TransferPage() {
                 />
             )}
 
-            <main className="container px-4 py-8 md:px-8 flex justify-center">
-                <Card className="w-full max-w-lg border-accent/10 bg-secondary/30">
+            <main className="container px-4 py-8 md:px-8 flex justify-center relative z-10">
+                <Card className="w-full max-w-lg glass-panel">
                     <CardHeader>
                         <CardTitle>Secure Transfer</CardTitle>
                         <CardDescription>Send funds securely to another account.</CardDescription>

@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { TransactionTable } from "@/components/dashboard/transaction-table";
 import { accounts } from "@/lib/mock-data";
-import { ArrowUpRight, CreditCard, ShieldCheck, AlertTriangle } from "lucide-react";
+import { ArrowUpRight, CreditCard, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 
 export default function DashboardPage() {

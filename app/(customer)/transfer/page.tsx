@@ -12,7 +12,6 @@ import { motion } from "framer-motion";
 
 export default function TransferPage() {
     const router = useRouter();
-    const [step, setStep] = useState(1);
     const [amount, setAmount] = useState("");
     const [recipient, setRecipient] = useState("");
     const [isProcessing, setIsProcessing] = useState(false);

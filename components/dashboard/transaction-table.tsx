@@ -1,14 +1,5 @@
 "use client";
 
-import {
-    Table,
-    TableBody,
-    TableCell,
-    TableHead,
-    TableHeader,
-    TableRow
-} from "@/components/ui/table"; // We need to create this or use standard HTML
-import { Badge } from "@/components/ui/badge"; // Need to create badge
 import { cn } from "@/lib/utils";
 import { recentTransactions } from "@/lib/mock-data";
 

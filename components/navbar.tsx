@@ -2,14 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ShieldCheck, Lock, LayoutDashboard, User } from "lucide-react";
+import { ShieldCheck, Lock } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 export function Navbar() {
     const pathname = usePathname();
-
-    const isAnalyst = pathname.startsWith("/admin");
 
     return (
         <nav className="sticky top-0 z-50 w-full border-b border-accent/10 bg-background/60 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60">

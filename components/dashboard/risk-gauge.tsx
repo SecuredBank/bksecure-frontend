@@ -8,8 +8,6 @@ const data = [
     { name: "Risk", value: 30 },
 ];
 
-const COLORS = ["#112240", "#64FFDA"];
-
 export function RiskGauge({ score }: { score: number }) {
     // Calculate rotation based on score (0-100) mapping to (-90 to 90 degrees)
     // Actually let's just do a simple semi-circle

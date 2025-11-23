@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ScanFace, CheckCircle2, XCircle } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 interface BiometricPromptProps {
     isOpen: boolean;

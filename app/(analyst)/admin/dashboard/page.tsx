@@ -19,7 +19,7 @@ export default function AnalystDashboard() {
                 </div>
 
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-8">
-                    <Card className="border-accent/10 bg-secondary/30">
+                    <Card className="border-accent/10 bg-secondary opacity-30">
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                             <CardTitle className="text-sm font-medium text-muted-foreground">Active Threats</CardTitle>
                             <ShieldAlert className="h-4 w-4 text-accent-danger" />
@@ -29,7 +29,7 @@ export default function AnalystDashboard() {
                             <p className="text-xs text-muted-foreground">+2 since last hour</p>
                         </CardContent>
                     </Card>
-                    <Card className="border-accent/10 bg-secondary/30">
+                    <Card className="border-accent/10 bg-secondary opacity-30">
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                             <CardTitle className="text-sm font-medium text-muted-foreground">Transactions / Sec</CardTitle>
                             <Activity className="h-4 w-4 text-accent" />
@@ -39,7 +39,7 @@ export default function AnalystDashboard() {
                             <p className="text-xs text-muted-foreground">+12% from average</p>
                         </CardContent>
                     </Card>
-                    <Card className="border-accent/10 bg-secondary/30">
+                    <Card className="border-accent/10 bg-secondary opacity-30">
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                             <CardTitle className="text-sm font-medium text-muted-foreground">Active Sessions</CardTitle>
                             <Users className="h-4 w-4 text-accent-gold" />
@@ -49,7 +49,7 @@ export default function AnalystDashboard() {
                             <p className="text-xs text-muted-foreground">Global users online</p>
                         </CardContent>
                     </Card>
-                    <Card className="border-accent/10 bg-secondary/30">
+                    <Card className="border-accent/10 bg-secondary opacity-30">
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                             <CardTitle className="text-sm font-medium text-muted-foreground">Blocked Attempts</CardTitle>
                             <Lock className="h-4 w-4 text-accent" />
@@ -62,7 +62,7 @@ export default function AnalystDashboard() {
                 </div>
 
                 <div className="grid gap-6 md:grid-cols-3 mb-8">
-                    <Card className="col-span-1 border-accent/10 bg-secondary/30">
+                    <Card className="col-span-1 border-accent/10 bg-secondary opacity-30">
                         <CardHeader>
                             <CardTitle>System Threat Level</CardTitle>
                         </CardHeader>
@@ -74,7 +74,7 @@ export default function AnalystDashboard() {
                         </CardContent>
                     </Card>
 
-                    <Card className="col-span-2 border-accent/10 bg-secondary/30">
+                    <Card className="col-span-2 border-accent/10 bg-secondary opacity-30">
                         <CardHeader>
                             <CardTitle>Live Transaction Stream</CardTitle>
                         </CardHeader>

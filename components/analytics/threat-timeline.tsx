@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { AlertTriangle, Shield, CheckCircle, Clock } from "lucide-react";
+import { AlertTriangle, CheckCircle, Clock } from "lucide-react";
 import { formatDate } from "@/lib/helpers";
 
 interface ThreatEvent {

@@ -1,8 +1,10 @@
 /**
  * Professional Commit Message Generator
  * Generates 300+ professional commits for the banking cybersecurity project
+ * @eslint-disable
  */
 
+/* eslint-disable @typescript-eslint/no-require-imports */
 const fs = require('fs');
 const { execSync } = require('child_process');
 const path = require('path');
@@ -211,13 +213,13 @@ function generateCommits(count = 300) {
       if ((i + 1) % 50 === 0) {
         console.log(`✓ Generated ${i + 1}/${count} commits...`);
       }
-    } catch (error) {
+    } catch {
       // If commit fails, try to clean up
       try {
         if (fs.existsSync(filepath)) {
           fs.unlinkSync(filepath);
         }
-      } catch (e) {
+      } catch {
         // Ignore cleanup errors
       }
     }

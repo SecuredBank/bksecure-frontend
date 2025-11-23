@@ -4,7 +4,7 @@ import { Navbar } from "@/components/navbar";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Settings, Bell, Shield, Database, Key } from "lucide-react";
+import { Bell, Shield, Database, Key } from "lucide-react";
 
 export default function SettingsPage() {
   return (

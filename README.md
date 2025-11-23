@@ -91,11 +91,48 @@ The application includes simulated fraud detection:
 - `/login` - Customer authentication
 - `/dashboard` - Account overview
 - `/transfer` - Secure fund transfers
+- `/settings` - Account settings
 
 ### Analyst Routes
 - `/admin/dashboard` - SOC overview
 - `/admin/logs` - Transaction logs
 - `/admin/alerts` - Case investigation
+- `/admin/settings` - System settings
+
+## 🚀 Deployment
+
+### Deploy to Vercel
+
+The application is configured for easy deployment on Vercel:
+
+1. **Via Dashboard** (Recommended):
+   - Go to [Vercel Dashboard](https://vercel.com/leandre000s-projects)
+   - Click "Add New Project"
+   - Import `SecuredBank/bksecure-frontend` repository
+   - Vercel will auto-detect Next.js settings
+   - Click "Deploy"
+
+2. **Via CLI**:
+   ```bash
+   npm i -g vercel
+   vercel login
+   vercel --prod
+   ```
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.
+
+### Production Build
+
+```bash
+npm run build
+npm start
+```
+
+The application is production-ready with:
+- ✅ Optimized bundle size
+- ✅ Security headers configured
+- ✅ Static and dynamic rendering
+- ✅ API routes as serverless functions
 
 ## 📝 License
 
